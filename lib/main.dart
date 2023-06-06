@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_qrcode/pages/perguntas.dart';
 import 'package:flutter_qrcode/pages/qrcode_page.dart';
 
 void main() {
@@ -21,12 +22,21 @@ class App extends StatelessWidget {
             primary: Colors.tealAccent,
             padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 36),
             onPrimary: Colors.black,
-            textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+            textStyle:
+                const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
           ),
         ),
       ),
       themeMode: ThemeMode.dark,
-      home: const QRCodePage(),
+      // home: const QRCodePage(),
+      routes: {
+        // '/': (_) => const QRCodePage(),
+        // '/pergunta': (_) => const Perguntas(),
+        '/': (_) => const QRCodePage(),
+        '/pergunta': (_) => const Perguntas(
+              num_pergunta: 0,
+            ),
+      },
     );
   }
 }
