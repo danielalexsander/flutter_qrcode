@@ -29,7 +29,7 @@ class _PerguntasState extends State<Perguntas> {
     backgroundColor: Colors.green,
     action: SnackBarAction(
       textColor: Colors.white,
-      label: 'Desfazer',
+      label: 'Ok',
       onPressed: () {
         // Some code to undo the change.
       },
@@ -56,7 +56,7 @@ class _PerguntasState extends State<Perguntas> {
     backgroundColor: Colors.red,
     action: SnackBarAction(
       textColor: Colors.white,
-      label: 'Desfazer',
+      label: 'Ok',
       onPressed: () {
         // Some code to undo the change.
       },
@@ -93,7 +93,7 @@ class _PerguntasState extends State<Perguntas> {
       body: Form(
         key: formKey,
         child: Container(
-          height: 400,
+          height: 550,
           child: Column(
             children: [
               Padding(

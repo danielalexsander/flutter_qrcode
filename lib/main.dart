@@ -34,7 +34,7 @@ class App extends StatelessWidget {
         // '/pergunta': (_) => const Perguntas(),
         '/': (_) => const QRCodePage(),
         '/pergunta': (_) => const Perguntas(
-              num_pergunta: 0,
+              num_pergunta: 1,
             ),
       },
     );
